@@ -1,4 +1,4 @@
-$(document).ready(function () {
+$(function () {
     console.log("jQuery is ready!");
 
     // Part 1: Setup and selectors
@@ -86,16 +86,20 @@ $(document).ready(function () {
     });
 
     $("#change-link").on("click", function () {
-        const currentLink = $("#dynamic-link").attr("href");
+        const $dynamicLink = $("#dynamic-link");
+        const currentLink = $dynamicLink.attr("href");
+
         const newLink = currentLink === "https://www.w3schools.com/jquery/"
             ? "https://jquery.com/"
             : "https://www.w3schools.com/jquery/";
 
-        $("#dynamic-link")
-            .attr("href", newLink)
-            .text(newLink.includes("w3schools") ? "Open W3Schools jQuery" : "Open jQuery website");
-    });
+        const linkText = newLink.includes("w3schools")
+            ? "Open W3Schools jQuery"
+            : "Open jQuery website";
 
+        $dynamicLink.attr("href", newLink);
+        $dynamicLink.text(linkText);
+    });
     $("#name-input").on("input", function () {
         $("#name-preview").text($(this).val() || "—");
     });
