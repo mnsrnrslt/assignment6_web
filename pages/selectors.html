@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors and CSS | Assignment #6</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Assignment #6: jQuery</h1>
+            <p class="student-info">Mansur | SE-2527</p>
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a class="active" href="selectors.html">Selectors</a>
+                <a href="effects.html">Effects</a>
+                <a href="dom.html">DOM</a>
+                <a href="animations.html">Animations</a>
+                <a href="project.html">Mini Project</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container page-content">
+        <p class="eyebrow">ASSIGNMENT #6 · MANSUR · SE-2527</p>
+        
+        <h2>Part 1. Getting Started with jQuery</h2>
+        <section class="card">
+            <h3>Task 0. Setup</h3>
+            <p>jQuery is included from the official CDN. The ready callback checks that
+                the document is ready before running the page scripts.</p>
+            <p id="ready-status" class="result">Waiting for jQuery...</p>
+            <button id="check-ready" class="button">Check jQuery</button>
+        </section>
+
+        <section class="card">
+            <h3>Task 1. Selectors &amp; CSS</h3>
+            <p id="selector-id">This paragraph is selected by its ID.</p>
+            <p class="selector-class">This paragraph is selected by its class.</p>
+            <p>Paragraph elements can also be selected by their tag name.</p>
+            <div class="button-row">
+                <button id="change-text" class="button">Change text</button>
+                <button id="change-html" class="button">Change HTML</button>
+                <button id="change-css" class="button">Change CSS</button>
+            </div>
+            <p id="selector-output" class="result">Use the buttons to see selector examples.</p>
+        </section>
+
+    </main>
+    <footer><p>Assignment #6 · Mansur · SE-2527</p></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project - Image Gallery | Assignment #6</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Assignment #6: jQuery</h1>
+            <p class="student-info">Mansur | SE-2527</p>
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="selectors.html">Selectors</a>
+                <a href="effects.html">Effects</a>
+                <a href="dom.html">DOM</a>
+                <a href="animations.html">Animations</a>
+                <a class="active" href="project.html">Mini Project</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container page-content">
+        <p class="eyebrow">ASSIGNMENT #6 · MANSUR · SE-2527</p>
+        
+        <h2>Part 5. Mini Project</h2>
+        <section class="card">
+            <h3>Task 11. Interactive Image Gallery</h3>
+            <p>Select a thumbnail to display a larger image. The gallery uses jQuery
+                fade effects and click events.</p>
+            <div class="gallery-main">
+                <img id="gallery-large"
+                     src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200"
+                     alt="Mountain landscape">
+            </div>
+            <div class="gallery-thumbnails">
+                <button class="thumbnail active" data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=300" alt="Mountain thumbnail">
+                </button>
+                <button class="thumbnail" data-image="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200">
+                    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=300" alt="Lake thumbnail">
+                </button>
+                <button class="thumbnail" data-image="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200">
+                    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=300" alt="Forest thumbnail">
+                </button>
+            </div>
+        </section>
+
+    </main>
+    <footer><p>Assignment #6 · Mansur · SE-2527</p></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

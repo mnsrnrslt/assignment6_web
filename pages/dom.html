@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation | Assignment #6</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Assignment #6: jQuery</h1>
+            <p class="student-info">Mansur | SE-2527</p>
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="selectors.html">Selectors</a>
+                <a href="effects.html">Effects</a>
+                <a class="active" href="dom.html">DOM</a>
+                <a href="animations.html">Animations</a>
+                <a href="project.html">Mini Project</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container page-content">
+        <p class="eyebrow">ASSIGNMENT #6 · MANSUR · SE-2527</p>
+        
+        <h2>Part 3. DOM Manipulation with jQuery</h2>
+        <section class="card">
+            <h3>Task 5. Add &amp; Remove Elements</h3>
+            <ul id="item-list" class="demo-list">
+                <li>First item</li>
+                <li>Second item</li>
+            </ul>
+            <div class="button-row">
+                <button id="append-item" class="button">Add Item</button>
+                <button id="prepend-item" class="button">Prepend Item</button>
+                <button id="remove-item" class="button">Remove Item</button>
+            </div>
+        </section>
+
+        <section class="card">
+            <h3>Task 6. Modifying Attributes</h3>
+            <img id="attribute-image" class="demo-image"
+                 src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=900"
+                 alt="Lake and mountains">
+            <div class="button-row">
+                <button id="change-image" class="button">Change Image</button>
+                <button id="change-link" class="button">Change Link</button>
+            </div>
+            <p><a id="dynamic-link" href="https://jquery.com/" target="_blank"
+                  rel="noopener noreferrer">Open jQuery website</a></p>
+        </section>
+
+        <section class="card">
+            <h3>Task 7. Form Interaction</h3>
+            <form id="live-form">
+                <label for="name-input">Name</label>
+                <input id="name-input" type="text" placeholder="Enter your name">
+                <label for="email-input">Email</label>
+                <input id="email-input" type="email" placeholder="Enter your email">
+            </form>
+            <div class="result live-preview">
+                <p><strong>Name:</strong> <span id="name-preview">—</span></p>
+                <p><strong>Email:</strong> <span id="email-preview">—</span></p>
+            </div>
+        </section>
+
+    </main>
+    <footer><p>Assignment #6 · Mansur · SE-2527</p></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

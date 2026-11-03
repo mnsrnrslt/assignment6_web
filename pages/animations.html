@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations | Assignment #6</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Assignment #6: jQuery</h1>
+            <p class="student-info">Mansur | SE-2527</p>
+            <nav class="navbar" aria-label="Main navigation">
+                <a href="../index.html">Home</a>
+                <a href="selectors.html">Selectors</a>
+                <a href="effects.html">Effects</a>
+                <a href="dom.html">DOM</a>
+                <a class="active" href="animations.html">Animations</a>
+                <a href="project.html">Mini Project</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container page-content">
+        <p class="eyebrow">ASSIGNMENT #6 · MANSUR · SE-2527</p>
+        
+        <h2>Part 4. Animations</h2>
+        <section class="card">
+            <h3>Task 8. Basic Animation</h3>
+            <p>Click the button to increase the square's size and move it.</p>
+            <div class="animation-stage">
+                <div id="basic-box" class="animation-box"></div>
+            </div>
+            <button id="basic-animation" class="button">Run Basic Animation</button>
+        </section>
+
+        <section class="card">
+            <h3>Task 9. Sequential Animations</h3>
+            <p>The box moves right, moves down, shrinks, and returns to its original position.</p>
+            <div class="animation-stage sequential-stage">
+                <div id="sequence-box" class="animation-box"></div>
+            </div>
+            <button id="sequence-animation" class="button">Run Sequence</button>
+        </section>
+
+        <section class="card">
+            <h3>Task 10. Combined Animation</h3>
+            <p>Opacity, size, and position are changed in one animate() call.</p>
+            <div class="animation-stage">
+                <div id="combined-box" class="animation-box"></div>
+            </div>
+            <button id="combined-animation" class="button">Run Combined Animation</button>
+        </section>
+
+    </main>
+    <footer><p>Assignment #6 · Mansur · SE-2527</p></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
